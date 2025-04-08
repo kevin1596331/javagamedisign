@@ -176,18 +176,19 @@ public class 遊戲設計期末 extends JFrame implements KeyListener{
 		int[][] data9= {{0,8},{0,1,8},{-8,0,1},{-8,0,7,8},{0},{-1,0,1}};
 		int[][] data10= {{0,1,8},{-9,-8,0,7,8},{-8,0,8},{-1,0,1,9},{0},{-1,0,8},{0,1}};
 
-		
-		if(stage==1) return data1;
-		if(stage==2) return data2;
-		if(stage==3) return data3;
-		if(stage==4) return data4;
-		if(stage==5) return data5;
-		if(stage==6) return data6;
-		if(stage==7) return data7;
-		if(stage==8) return data8;
-		if(stage==9) return data9;
-		if(stage==10) return data10;
-		return null;
+		switch(stage) {
+		case 1: return data1;
+		case 2: return data2;
+		case 3: return data3;
+		case 4: return data4;
+		case 5: return data5;
+		case 6: return data6;
+		case 7: return data7;
+		case 8: return data8;
+		case 9: return data9;
+		case 10: return data10;
+		default: return null;
+		}
 	}
 	
 	//方塊大小數量
@@ -203,17 +204,19 @@ public class 遊戲設計期末 extends JFrame implements KeyListener{
 		int[] data9= {2,3,3,4,1,3};
 		int[] data10= {3,5,3,4,1,3,2};		
 		
-		if(stage==1) return data1;
-		if(stage==2) return data2;
-		if(stage==3) return data3;
-		if(stage==4) return data4;
-		if(stage==5) return data5;
-		if(stage==6) return data6;
-		if(stage==7) return data7;
-		if(stage==8) return data8;
-		if(stage==9) return data9;
-		if(stage==10) return data10;
-		return null;
+		switch(stage) {
+		case 1: return data1;
+		case 2: return data2;
+		case 3: return data3;
+		case 4: return data4;
+		case 5: return data5;
+		case 6: return data6;
+		case 7: return data7;
+		case 8: return data8;
+		case 9: return data9;
+		case 10: return data10;
+		default: return null;
+		}
 	}
 	
 	//方塊總數量
@@ -229,17 +232,19 @@ public class 遊戲設計期末 extends JFrame implements KeyListener{
 		int data9= 6;
 		int data10= 7;
 		
-		if(stage==1) return data1;
-		if(stage==2) return data2;
-		if(stage==3) return data3;
-		if(stage==4) return data4;
-		if(stage==5) return data5;
-		if(stage==6) return data6;
-		if(stage==7) return data7;
-		if(stage==8) return data8;
-		if(stage==9) return data9;
-		if(stage==10) return data10;
-		return 0;
+		switch(stage) {
+		case 1: return data1;
+		case 2: return data2;
+		case 3: return data3;
+		case 4: return data4;
+		case 5: return data5;
+		case 6: return data6;
+		case 7: return data7;
+		case 8: return data8;
+		case 9: return data9;
+		case 10: return data10;
+		default: return 0;
+		}
 	}
 	
 	//方塊使用
@@ -254,20 +259,20 @@ public class 遊戲設計期末 extends JFrame implements KeyListener{
 		boolean[] data8= {false,false,false,false,false,false,false};
 		boolean[] data9= {false,false,false,false,false,false};
 		boolean[] data10= {false,false,false,false,false,false,false};
-
 		
-		
-		if(stage==1) return data1;
-		if(stage==2) return data2;
-		if(stage==3) return data3;
-		if(stage==4) return data4;
-		if(stage==5) return data5;
-		if(stage==6) return data6;
-		if(stage==7) return data7;
-		if(stage==8) return data8;
-		if(stage==9) return data9;
-		if(stage==10) return data10;
-		return null;
+		switch(stage) {
+		case 1: return data1;
+		case 2: return data2;
+		case 3: return data3;
+		case 4: return data4;
+		case 5: return data5;
+		case 6: return data6;
+		case 7: return data7;
+		case 8: return data8;
+		case 9: return data9;
+		case 10: return data10;
+		default: return null;
+		}
 	}
 	
 	//關卡設計
@@ -371,17 +376,19 @@ public class 遊戲設計期末 extends JFrame implements KeyListener{
 					 	 "BbbbbwwB"+
 						 "BbbbbbwB"+
 						 "BBBBBBBB";
-		if(stage==1) return bgcolor1;
-		if(stage==2) return bgcolor2;
-		if(stage==3) return bgcolor3;
-		if(stage==4) return bgcolor4;
-		if(stage==5) return bgcolor5;
-		if(stage==6) return bgcolor6;
-		if(stage==7) return bgcolor7;
-		if(stage==8) return bgcolor8;
-		if(stage==9) return bgcolor9;
-		if(stage==10) return bgcolor10;
-		else return null;
+		switch(stage) {
+			case 1: return bgcolor1;
+			case 2: return bgcolor2;
+			case 3: return bgcolor3;
+			case 4: return bgcolor4;
+			case 5: return bgcolor5;
+			case 6: return bgcolor6;
+			case 7: return bgcolor7;
+			case 8: return bgcolor8;
+			case 9: return bgcolor9;
+			case 10: return bgcolor10;
+			default: return null;
+		}
 	}
 	
 	@Override
